@@ -26,8 +26,39 @@ body {
 }
     
     form {
-    margin: 40px 0 20px 0;
+    margin: 30px 0 20px 0;
+        input {
+            border: 1px solid #999;
+            height: 40px;
+            padding: 0 15px;
+            font-size: 17px;
+
+        :focus {
+            border: 2px solid rgb(23, 153, 196);
+            padding: 0 14px;
+        }
+        
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 5px;
+            margin: 6px;
+            
+        }
+        .drop-list {
+            .icon {
+                margin: 7px;
+            }
+        }
+        
 }
 
 }
 
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
