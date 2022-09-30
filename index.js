@@ -1,30 +1,16 @@
-function convertToRoman(num) {
+const droplist = document.querySelectorAll(".drop-list select");
+const fromRoman = document.querySelector(".from select");
+const toRoman = document.querySelector(".to select");
+const getButton = document.querySelector("form button");
+
+
+let result = ''
+for (const keys in numbers) {
+  while (num >= numbers[keys]) {
+    result += keys;
+    num -= numbers[keys];
+  }
+}
  
-const numbers = {
-   M:	1000,
-   CM:	900,
-   D:	500,
-   CD:	400,
-   C:	100,
-   XC:	90,
-   L:	50,
-   XL:	40,
-   X: 10,
-   IX:	9,
-   V:	5,
-   IV:	4,
-   I:	1,
-    }
-
-   let result = ''
-
-   for (const keys in numbers) {
-     while (num >= numbers[keys]) {
-       result += keys;
-       num -= numbers[keys];
-     }
-   }
-    return result;
-    
-   }
-   
+ return result;
+}

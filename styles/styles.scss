@@ -26,9 +26,30 @@ body {
 }
     
     form {
-    margin: 30px 0 20px 0;
-        input {
-            border: 1px solid #999;
+        margin: 30px 0 20px 0;
+
+    :where(input, select, button) {
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .result {
+        font-size: 17px;
+        margin: 20px 0 30px;
+    }
+
+    button {
+        height: 52px;
+        color: #fff;
+        background-color: rgb(23, 153, 196);
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    input {
+            border: 1px solid rgb(153, 153, 153);
             height: 40px;
             padding: 0 15px;
             font-size: 17px;
@@ -39,26 +60,42 @@ body {
         }
         
         }
+
         p {
             font-size: 18px;
-            margin-bottom: 5px;
-            margin: 6px;
-            
+            margin: 3px;
         }
+
         .drop-list {
+            margin-top: 20px;
+            align-items: center;
+            justify-content: space-between;
+            
             .icon {
                 margin: 7px;
+                font-size: 22px;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+            .select-box {
+                display: flex;
+                width: auto;
+                height: 45px;
+                border: 1px solid #999;
+                border-radius: 7px;
+                justify-content: center;
+
+                .select {
+                width: auto;
+                font-size: 16px;
+                background: none;
+                margin: 0 -5px 0 5px;
+                
+                }
+                
             }
         }
         
 }
 
-}
-
-
-form :where(input, select, button) {
-    width: 100%;
-    outline: none;
-    border: none;
-    border-radius: 5px;
 }
