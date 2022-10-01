@@ -1,34 +1,55 @@
+
 # Roman Numeral Converter
 
-## Table of Contents
 
-- [Overview](#overview)
-- [Built With](#built-with)
-- [Features](#features)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+## Table of contents
 
-## Overview
+* [Description](#description)
+* [Technologies](#technologies)
+* [Features](#features)
+* [How to run the project locally](#how-to-run-the-project-locally)
+* [Feedback](#feedback)
+* [Acknowledgements](#acknowledgements)
+#
 
-<!-- TODO: Add a screenshot of the live project.
-    1. Link to a 'live demo.'
-    2. Describe your overall experience in a couple of sentences.
-    3. List a few specific technical things that you learned or improved on.
-    4. Share any other tips or guidance for others attempting this or something similar.
- -->
+This simple Romans Numeral Converter can be utilised to convert integars to roman numerals. 
+If you require a conversion, simply enter the number or symbol(s) into the designated box and you will get the 
+exact representation of the value you are looking for.
+## Technologies:
+Project is created with:
 
-### Built With
-
-<!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
-
+[![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)](https://github.com/search?q=user%3Athetalesofj+language%3Ajavascript)
+[![html](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/search?q=user%3Athetalesofj+language%3Ahtml)
+[![sass](https://img.shields.io/badge/sass-8034A9?style=for-the-badge&logo=sass&logoColor=white)](https://github.com/search?q=user%3Athetalesofj+language%3Ascss)
 ## Features
 
-<!-- TODO: List what specific 'user problems' that this application solves. -->
+- Live previews
+- Fullscreen mode
+- Cross platform
 
-## Contact
 
-<!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
+## How to run the project locally
+
+Here are directions on how to fork the thetalesofj/Roman-Numeral-Converter repository:
+<br>
+https://docs.github.com/en/get-started/quickstart/fork-a-repo
+
+In the command line:
+
+1. Clone the repo by typing `git clone https://github.com/YOUR-GITHUB-USERNAME/Roman-Numeral-Converter.git`
+2. Then type `cd Roman-Numeral-Converter` to go into the project's directory.
+3. Install dependencies with `npm install`
+4. Run the project with `npm start`
+5. Have fun 🚀
+## Feedback
+
+If you have any feedback, please reach out to one of the links below:
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jeremiah-haastrup/)[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thetalesofj)
 
 ## Acknowledgements
 
-<!-- TODO: List any blog posts, tutorials or plugins that you may have used to complete the project. Only list those that had a significant impact. Obviously, we all 'Google' stuff while working on our things, but maybe something in particular stood out as a 'major contributor' to your skill set for this project. -->
+ - [Carlos Da Costa tutorial for HTML DOM tips](https://calolocosta.medium.com/create-a-roman-numerals-converter-in-javascript-a82fda6b7a60)
+
+
+
