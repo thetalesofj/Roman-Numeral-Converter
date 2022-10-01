@@ -1,16 +1,79 @@
-const droplist = document.querySelectorAll(".drop-list select");
-const fromRoman = document.querySelector(".from select");
-const toRoman = document.querySelector(".to select");
-const getButton = document.querySelector("form button");
+const integarInput = document.getElementById("integarInput");
+const romanInput = document.getElementById("romanInput");
 
 
-let result = ''
-for (const keys in numbers) {
-  while (num >= numbers[keys]) {
-    result += keys;
-    num -= numbers[keys];
-  }
-}
+integarInput.addEventListener("input", (e) => {
+    romanInput.value = convertToRoman(e.target.value);
+});
+
+romanInput.addEventListener("input", (e) => {
+    integarInput.value = convertToIntegar(e.target.value);
+});
+
+
+// Integar to Roman
+
+function convertToRoman(num) {
  
- return result;
+const numbers = {
+   M: 1000,
+   CM: 900,
+   D: 500,
+   CD: 400,
+   C: 100,
+   XC: 90,
+   L: 50,
+   XL: 40,
+   X: 10,
+   IX: 9,
+   V: 5,
+   IV: 4,
+   I: 1,
+    }
+
+   let result = ''
+   for (const keys in numbers) {
+     while (num >= numbers[keys]) {
+       result += keys;
+       num -= numbers[keys];
+     }
+   }
+    
+    return result;
+
+   }
+
+   // Roman to Integar
+
+function convertToIntegar(s) {
+
+let accum = 0
+let roman = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+   };
+
+   for (let i = 0; i < s.length; i++) {
+    const current = roman[s[i]];
+    const next = roman[s[i + 1]];
+
+    if (current < next) {
+        accum += (next - current);
+        i++;
+    } else {
+        accum += current;
+    }
+   }
+   return accum;
 }
