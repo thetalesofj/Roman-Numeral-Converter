@@ -64,13 +64,13 @@ let roman = {
     I: 1,
    };
 
-   for (let i = 0; i < s.length; i++) {
-    const current = roman[s[i]];
-    const next = roman[s[i + 1]];
+   for (let a of s) {
+    let current = roman[s[a]];
+    let next = roman[s[a + 1]];
 
     if (current < next) {
         accum += (next - current);
-        i++;
+        s[a]++;
     } else {
         accum += current;
     }
