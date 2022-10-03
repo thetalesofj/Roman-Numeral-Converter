@@ -13,7 +13,7 @@
 
 ## Overview
 
-This simple Romans Numeral Converter can be utilised to convert integars to roman numerals. If you require a conversion, simply enter the number or symbol(s) into the designated box and you will get the exact representation of the value you are looking for.
+This simple Romans Numeral Converter can be utilised to convert integers to roman numerals. If you require a conversion, simply enter the number or symbol(s) into the designated box and you will get the exact representation of the value you are looking for.
 
 This was a great experience understanding how to implement HTML DOM and solidify my knowledge of SASS. I will be looking to develop this app further in the foreseeable future as I continue to create more projects.
 
